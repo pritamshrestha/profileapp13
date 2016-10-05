@@ -1,0 +1,61 @@
+/*this is for the background image*/
+body{background-image:url(../img/background.jpg);}
+#newProfile form > .form-group:first-child input {
+	display: inline;
+	width: 49.5%;
+}
+#one{
+	color:yellow;
+	font-size:20px;
+}
+#two{
+	color:yellow;
+	font-size:20px;
+}
+.three{
+	 color:#ffffff;
+	 font-size:25px;
+}
+#four{color:red;}
+#five{color:red;}
+
+#userfname{
+	color:red;
+}
+#userlname{color:red;}
+#userEmail{color:red;}
+#userPhone{color:red;}
+#textAreas{color:red;}
+#updatedProfile {
+	display: none;
+}
+
+#results {
+	color: #fff;
+	margin: 10px 0;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.success {
+	background-color: #5cb85c;
+	transition: 0.3s all ease-in-out;
+}
+
+.failure {
+	background-color: #d9534f;
+	transition: 0.3s all ease-in-out;
+}
+/*this is for the media query*/
+@media(max-width: 1200px){
+	#userBirth{display:block;
+
+
+	}
+}
+@media(max-width: 700px){
+	#three{font-size:17px;
+
+
+	}
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	   <title>profile app</title>
+	   <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+	   <link rel="stylesheet" href="css/main.css">
+	   <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+
+
+
+      
+<body>
+
+    <div class="container">
+      
+      <div id="newProfile" class="col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1">
+        <h1 class="text-primary text-center">UserProfile</h1>
+        <!-- new profile -->
+      <form>
+        <!-- NAME -->
+        <div class="form-group">
+         
+          <input type="text" id="userfname" class="form-control" placeholder=" Enter First Name">
+        
+        
+          <input type="text" id="userlname" class="form-control" placeholder="Enter Last Name">
+        </div>
+        <!-- GENDER -->
+        <div class="form-group" id="one">
+          Gender: 
+          <label class="radio-inline">
+            <input type="radio" name="radio1" class="userGender" value="male"> Male
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="radio1" class="userGender" value="female"> Female
+          </label>
+        </div>
+        <!-- EMAIL -->
+        <div class="form-group">
+
+          <input type="email" id="userEmail" class="form-control" placeholder=" Enter Email Address">
+        </div>
+        <!-- PHONE NUMBER -->
+        <div class="form-group">
+          <input type="number" id="userPhone" class="form-control" placeholder=" Enter Phone Number">
+        </div>
+        <!-- FAVORITE PRIMARY COLOR -->
+        <div class="form-group">
+          <select class="form-control" id="five" placeholder="select one">
+            <option value="" class="userColor" id="six">select one</option>
+            <option value="Red" class="userColor" id="four" >Red</option>
+            <option value="Green" class="userColor" id="four">Green</option>
+            <option value="Blue" class="userColor" id="four">Blue</option>
+          </select>
+        </div>
+        <!-- CONTINENT OF BIRTH -->
+        <div class="form-group" id="two">
+          Continent of birth: 
+          <br>
+          <label class="radio-block">
+            <input type="radio" name="radio2" class="userBirth" value="Africa"> Africa
+          </label>
+          <label class="radio-block">
+            <input type="radio" name="radio2" class="userBirth" value="Asia"> Asia
+          </label>
+          <label class="radio-block">
+            <input type="radio" name="radio2" class="userBirth" value="Australia"> Australia
+          </label>
+          <label class="radio-block">
+            <input type="radio" name="radio2" class="userBirth" value="Europe"> Europe
+          </label>
+          <label class="radio-block">
+            <input type="radio" name="radio2" class="userBirth" value="North America"> North America
+          </label>
+          <label class="radio-block">
+            <input type="radio" name="radio2" class="userBirth" value="South America"> South America
+          </label>
+
+        </div>
+       
+        <!-- adding the text area for the comment -->
+        <div class="form-group bg-danger">
+          <textarea type="text" id="textAreas" class="form-control" placeholder="Comment here please!"></textarea>
+        </div>
+        
+        
+        <button id="sendDataButton" type="button" class="btn btn-danger center-block">Continue</button>
+
+        <div id="results"></div>
+      </form>
+
+      </div><!-- /.col-sm-6 -->
+      
+      <div id="updatedProfile" class="col-sm-6 col-sm-offset-3">
+        <h1 class="text-primary text-center">User Profile</h1>
+        <!-- updated profile -->
+        <div>
+          <h2 id='newUserName' class="three"></h2>
+          <h3 id="newUserGender" class="three"></h3>
+          <h3 id="newUserEmail" class="three"></h3>
+          <h3 id="newUserPhone" class="three"></h3>
+          <h3 id="newUserColor" class="three"></h3>
+          <h3 id="newUserBirth" class="three"></h3>
+          <h3 id="newtextarea"  class="three"></h3>
+
+        </div><!-- /#updatedProfile -->
+
+      </div><!-- /.col-sm-6 -->
+
+    </div><!-- /.container -->
+
+     
+
+
+     <!-- this is for the jquery -->
+     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+     <script src="js/main.js"></script>  
+     <script src="js/bootstrap.js"></script> 
+</body>
+</html>
